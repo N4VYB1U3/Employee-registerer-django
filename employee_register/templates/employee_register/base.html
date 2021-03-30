@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/tailwind-output.css" %}">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Employee Register</title>
+    </head>
+    <div>
+        <div class="w-full md:w-8/12 lg:w-8/12 mx-auto px-6 mt-6 md:mt-20">
+            <div class="p-12 rounded-lg bg-gray-200">
+                <h1 class="text-3xl font-medium mb-3 text-gray-800 text-center">Employee Register 👋</h1>
+                <p class="text-gray-500 border-b-2 border-gray-500 pb-6 mb-6 text-center">Python Django Project implementing CRUD operations.</p>
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+    </body>
+</html>
